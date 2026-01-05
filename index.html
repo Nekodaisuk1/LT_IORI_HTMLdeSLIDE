@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>HTML+CSS+JS Slide</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Slide 1 -->
+  <section class="slide active">
+    <h1>HTML + CSS + JS<br>でのスライド制作のすゝめ</h1>
+    <p class="sub">アニメーションからAI制作まで</p>
+  </section>
+
+  <section class="slide">
+    <h1>HTMLでスライドを作ろう!</h1>
+    </section>
+
+
+
+  <!-- Slide 3 -->
+  <section class="slide">
+    <h2>なぜHTMLでスライドを？</h2>
+    <ul>
+      <li>慣れると早い</li>
+      <li>CSSで鬼キモアニメーションが作成可能</li>
+      <li>Git管理できる</li>
+    </ul>
+  </section>
+
+<section class="slide">
+    <h2>なぜHTMLでスライドを？</h2>
+    <ul>
+      <li>慣れると早い</li>
+      <li>CSSで鬼キモアニメーションが作成可能</li>
+      <li>Git管理できる</li>
+    </ul>
+  </section>
+
+  <!-- Slide 4 -->
+  <section class="slide">
+    <h2>中身は普通のweb</h2>
+    <pre><code>
+&lt;section class="slide"&gt;
+  &lt;h2&gt;中身は普通のweb&lt;/h2&gt;
+&lt;/section&gt;
+    </code></pre>
+  </section>
+
+  <!-- Slide 5: Live Editor -->
+  <section class="slide editor-slide">
+    <h2>じっさいにやってみた</h2>
+    <div class="editor-container">
+      <div class="editor-panel">
+        <div class="editor-header">CSS</div>
+        <textarea id="css-editor" spellcheck="false">/* ここでCSSを編集 */
+.demo-box {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 2rem;
+  border-radius: 12px;
+  color: white;
+  font-weight: bold;
+}
+
+.slid {
+    //background-color: red;
+    //font-size: 50px;
+    //align-content: flex-end;
+}
+</textarea>
+      </div>
+      <div class="editor-panel">
+        <div class="editor-header">HTML</div>
+        <textarea id="html-editor" spellcheck="false">&lt;div class="demo-box"&gt;
+  こんにちは！
+&lt;/div&gt;</textarea>
+      </div>
+      <div class="editor-panel preview-panel">
+        <div class="editor-header">プレビュー</div>
+        <div id="preview"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Slide 6: CSS Animations Demo -->
+  <section class="slide animation-demo">
+    <h2>CSSのアニメーション例</h2>
+    <div class="animation-grid">
+      <div class="anim-box fade-in">
+        <p>フェードイン</p>
+      </div>
+      <div class="anim-box slide-up">
+        <p>縦スライド</p>
+      </div>
+      <div class="anim-box bounce">
+        <p>バウンド</p>
+      </div>
+      <div class="anim-box rotate">
+        <p>回転</p>
+      </div>
+      <div class="anim-box pulse">
+        <p>拡大縮小</p>
+      </div>
+      <div class="anim-box shake">
+        <p>揺れる</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Slide 7: Advanced Animations -->
+  <section class="slide advanced-animation">
+    <h2>こんなアニメーションもできる</h2>
+    <div class="advanced-grid">
+      <div class="card-3d">
+        <div class="card-inner">
+          <div class="card-front">3D Flip</div>
+          <div class="card-back">裏面</div>
+        </div>
+      </div>
+      <div class="morphing-shape"></div>
+      <div class="neon-text">Neon</div>
+      <div class="particle-box">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+      </div>
+      <div class="gradient-border">
+        <span>Gradient</span>
+      </div>
+      <div class="glitch" data-text="Glitch">Glitch</div>
+    </div>
+  </section>
+
+  <!-- Slide 8 -->
+  <section class="slide">
+    <h2>Thanks!</h2>
+    <p>→ GitHubにテンプレ公開してます</p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
